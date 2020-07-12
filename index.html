@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>HeadLime - Remake</title>
+  </head>
+  <body>
+    <navbar class="navbar">
+      <!-- Left buttons of the navbar -->
+      <div class="navbar__left-items">
+        <!-- Logo -->
+        <img class="navbar__logo" src="lime-logo.png" alt="" />
+
+        <div class="navbar__btn"><a href="#">Profile</a></div>
+        <div class="navbar__btn"><a href="#">Logout</a></div>
+        <div class="navbar__btn"><a href="#">Darkmode</a></div>
+      </div>
+      <!-- Right buttons of the navbar -->
+      <div class="navbar__right-items">
+        <div class="navbar__btn"><a href="#">Your Headline</a></div>
+        <div class="navbar__btn"><a href="#">Project</a></div>
+        <div class="navbar__btn"><a href="#">New</a></div>
+        <div class="navbar__btn"><a href="#">Select All</a></div>
+        <div class="navbar__btn"><a href="#">Export</a></div>
+        <div class="navbar__btn navbar--btn-gold"><a href="#">Update</a></div>
+      </div>
+    </navbar>
+
+      <!-- Main Content -->
+       <main class="main-content">
+      <div class="main-container">
+
+        <!-- Sidebar Control Section -->
+        <section class="sidebar">
+          <div class="sidebar__title">
+            <h2>
+              VARIABLES
+            </h2>
+          </div>
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Audience</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              id="input_audience"
+              class="sidebar__keyword-input"
+              value="{Audience}" onkeyup="update_audience()"
+            />
+          </div>
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Solution</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              id="input_solution"
+              class="sidebar__keyword-input"
+              value="{Solution}"
+              onkeyup="update_style()"
+            />
+          </div>
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Problem</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Problem}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Product</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Product}"
+            />
+          </div>
+
+
+         
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Desired Outcome</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Desired Outcome}"
+            />
+          </div> 
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Period</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Period}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Authority</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Authority}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Number</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Number}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Product Name</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Product Name}"
+            />
+          </div>
+
+          
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Product Category</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Product Category}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">         
+            <label class="sidebar__keyword-label" for="">Undesirable Outcome</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Undesirable Outcome}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">USP</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{USP}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Unique Differentiator</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Unique Differentiator}"
+            />
+          </div>
+
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">$</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{$}"
+            />
+          </div>
+
+
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Current Solution</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Current Solution}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Do This</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Do This}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Objection or Anxiety</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Objection or Anxiety}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Topics</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Topics}"
+            />
+          </div>
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Doing Common Thing</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Doing Commong Thing}"
+            />
+          </div>
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Promise</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Promise}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Resource</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Resource}"
+            />
+          </div>
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Uncommon Thing</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Uncommon Thing}"
+            />
+          </div>
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Current Vendor</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Current Vendor}"
+            />
+          </div>
+
+
+        
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Superlative</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Superlative}"
+            />
+          </div>
+
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Topic</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Topic}"
+            />
+          </div>
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Objection</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Objection}"
+            />
+          </div>
+
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">Comparative</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Comparative}"
+            />
+          </div>
+
+
+          <div class="sidebar__keyword-group">
+            <div class="sidebar__keyword-heading">            
+            <label class="sidebar__keyword-label" for="">competitor</label>
+            <img src="questionmark.svg" alt="" class="sidebar__question-icon">
+            </div>
+            <input
+              type="text"
+              name=""
+              class="sidebar__keyword-input"
+              value="{Competitor}"
+            />
+          </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="cards">
+          <div class="cards__container">
+
+
+            <div class="cards__card">
+              <div class="cards__card-text">
+                Your Search for
+                <span class="cards__card-keyword keyword_audience">{Audience}</span> Ends
+                Here
+              </div>
+            </div>
+
+            <div class="cards__card">
+              <div class="cards__card-text">
+                Tired of
+                <span class="cards__card-keyword"> {Problem} </span>Get started
+                with <span class="cards__card-keyword" id="keyword_solution">{Solution}</span> Today!
+              </div>
+            </div>
+
+            <div class="cards__card">
+                <div class="cards__card-text">
+                  <span class="cards__card-keyword">{Number}</span> Ideas you can steal from <span class="cards__card-keyword">{Authority}</span>
+                </div>
+              </div>
+
+
+<!-- Insert -->
+<div class="cards__card"><div class="cards__card-text">Your Search for <span class="cards__card-keyword"> {Desired Outcome} </span> Ends Here</div></div>
+<div class="cards__card"><div class="cards__card-text">Tired of <span class="cards__card-keyword"> {Problem} </span>? Get started with <span class="cards__card-keyword"> {Solution} </span> Today!</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> Ideas You Can Steal From <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Let <span class="cards__card-keyword"> {Product} </span> Work on Your <span class="cards__card-keyword"> {Problem} </span> for Just <span class="cards__card-keyword"> {Period} </span> - And You’ll See The Difference</div></div>
+<div class="cards__card"><div class="cards__card-text">Want <span class="cards__card-keyword"> {Desired Outcome} </span>? Get <span class="cards__card-keyword"> {Solution} </span> Now</div></div>
+<div class="cards__card"><div class="cards__card-text">The Best Way for <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> to Get <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">To the <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Who Will Settle for Nothing Less Than <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword" id="keyword_audience"> {Audience} </span>: It's Time to Stop <span class="cards__card-keyword"> {Problem} </span>. Use <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Biggest (and Easiest) Secret of <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Make <span class="cards__card-keyword"> {Desired Outcome} </span> That Matter</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> of <span class="cards__card-keyword"> {Authority} </span> Is Right/Wrong About <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Authority} </span> Show You How to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Start Saving Money on <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Problem} </span> Shouldn't Be This Hard</div></div>
+<div class="cards__card"><div class="cards__card-text">Don't Make These <span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword"> {Problem} </span> Mistakes</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Solution} </span> That Work</div></div>
+<div class="cards__card"><div class="cards__card-text">How to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Ready to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Solution} </span>? You're Asking The Wrong Question</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product Name} </span> for <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Is Here!</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> Reasons Why You Should Buy <span class="cards__card-keyword"> {Product Name} </span> Right Now</div></div>
+<div class="cards__card"><div class="cards__card-text">Much of What You've Been Told About <span class="cards__card-keyword"> {Topic} </span> Is Wrong</div></div>
+<div class="cards__card"><div class="cards__card-text">Curious How <span class="cards__card-keyword"> {Product Name} </span> Stacks Up Against The Competition?</div></div>
+<div class="cards__card"><div class="cards__card-text">Why <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Just Can't Hack It?</div></div>
+<div class="cards__card"><div class="cards__card-text">You're Just <span class="cards__card-keyword"> {Period} </span> Away From <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Running Out Of Ideas For <span class="cards__card-keyword"> {Solution} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">The <span class="cards__card-keyword"> {Solution} </span> Your <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Deserves</div></div>
+<div class="cards__card"><div class="cards__card-text">Get the Best Power of <span class="cards__card-keyword"> {Product Category} </span> Without <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Complete Library of <span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword"> {Resource} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Secret 2-minute <span class="cards__card-keyword"> {Desired Outcome} </span> Techniques</div></div>
+<div class="cards__card"><div class="cards__card-text">Passionate About <span class="cards__card-keyword"> {Desired Outcome} </span>? We Are Too</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Period} </span> <span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword"> {Authority} </span> Used <span class="cards__card-keyword"> {Product} </span> to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> Proven Ways to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Desired Outcome} </span> in <span class="cards__card-keyword"> {Period} </span> or <span class="cards__card-keyword"> {Promise} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Don't Miss Out On <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Why You Need to Break All the Rules to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">When <span class="cards__card-keyword"> {Authority} </span> Need <span class="cards__card-keyword"> {Solution} </span>, They Call <span class="cards__card-keyword"> {Product Name} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> Lessons I Learned From <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Best Way to <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword" id="keyword_audience"> {Audience} </span>: Are You <span class="cards__card-keyword"> {Undesirable Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">9 Out of 10 <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Can’t <span class="cards__card-keyword"> {Do This} </span>. Are You One of Them?</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Solution} </span>, Backed by <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The "Insider" Secrets of <span class="cards__card-keyword"> {Product} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product Category} </span> Made Best</div></div>
+<div class="cards__card"><div class="cards__card-text">Let’s Stop <span class="cards__card-keyword"> {Undesirable Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Desired Outcome} </span> in <span class="cards__card-keyword"> {Period} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Join <span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Who Do <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Ultimate Guide to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">See Why <span class="cards__card-keyword"> {Authority} </span> Said (Something Intriguing)</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Desired Outcome} </span> Like <span class="cards__card-keyword"> {Authority} </span> - Without The <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The <span class="cards__card-keyword"> {Product} </span> for <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Stop Wasting Time on <span class="cards__card-keyword"> {Undesirable Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Get More/Better <span class="cards__card-keyword"> {Desired Outcome} </span> With <span class="cards__card-keyword"> {Product Category} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How Long Are You Willing to Put Up With <span class="cards__card-keyword"> {Undesirable Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">I Found a Best Way to Get <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How to <span class="cards__card-keyword"> {Desired Outcome} </span> and (Do Unexpected Thing as a Result)</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product} </span>. Reinvented.</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Desired Outcome} </span> Has Never Been Easier</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Undesirable Outcome} </span>? Stop!</div></div>
+<div class="cards__card"><div class="cards__card-text">Master the Art of <span class="cards__card-keyword"> {Desired Outcome} </span> in Just <span class="cards__card-keyword"> {Period} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Have a / Build a <span class="cards__card-keyword"> {Desired Outcome} </span> You Can Be Proud of</div></div>
+<div class="cards__card"><div class="cards__card-text">Little Known Ways to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How to Master <span class="cards__card-keyword"> {Solution} </span> in the Shortest Time Possible</div></div>
+<div class="cards__card"><div class="cards__card-text">They Used <span class="cards__card-keyword"> {Authority} </span> to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">What Everybody Ought to Know About <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Give Your <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Superpowers</div></div>
+<div class="cards__card"><div class="cards__card-text">The One Basic Secret of <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">What You Should Know About <span class="cards__card-keyword"> {Product} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Struggling to/with <span class="cards__card-keyword"> {Undesirable Outcome} </span>? Find Out Why <span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword"> {Authority} </span> Joined Us Last Week.</div></div>
+<div class="cards__card"><div class="cards__card-text">We Helped <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Just Like Yours to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Tired of <span class="cards__card-keyword"> {Problem} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">Uber/Tinder for/of <span class="cards__card-keyword"> {Solution} </span>.</div></div>
+<div class="cards__card"><div class="cards__card-text">How to <span class="cards__card-keyword"> {Desired Outcome} </span> Like <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Would You <span class="cards__card-keyword"> {Uncommon Thing} </span>? I Just Did.</div></div>
+<div class="cards__card"><div class="cards__card-text">Why <span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Can't <span class="cards__card-keyword"> {Undesirable Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Stop Doing <span class="cards__card-keyword"> {Undesirable Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How a <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Got <span class="cards__card-keyword"> {Desired Outcome} </span> in Just <span class="cards__card-keyword"> {Period} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Is It Immoral to Get <span class="cards__card-keyword"> {Desired Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">Get <span class="cards__card-keyword"> {Desired Outcome} </span> or <span class="cards__card-keyword"> {Promise} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Are You Still Wasting Money/Time on <span class="cards__card-keyword"> {Undesirable Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Only <span class="cards__card-keyword"> {Product Category} </span> That Doesn't <span class="cards__card-keyword"> {Objection Or Anxiety} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product} </span> Built to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Do You Have the Courage to <span class="cards__card-keyword"> {Uncommon Thing} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">The #1 Lesson I Learned From <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">I Don't Regret <span class="cards__card-keyword"> {Uncommon Thing} </span>. But Here's What I'd Do Differently.</div></div>
+<div class="cards__card"><div class="cards__card-text">We Can Help You Make/Do <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product} </span> Made Easy</div></div>
+<div class="cards__card"><div class="cards__card-text">How Your <span class="cards__card-keyword"> {Current Vendor} </span> Is Ripping You Off. And What to Do About It.</div></div>
+<div class="cards__card"><div class="cards__card-text">What <span class="cards__card-keyword"> {Authority} </span> Can Teach You About <span class="cards__card-keyword"> {Undesirable Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Say Goodbye to <span class="cards__card-keyword"> {Problem} </span> With <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">This Unexpected <span class="cards__card-keyword"> {Solution} </span> May Just Be the Best Medicine for <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Is This the World's First <span class="cards__card-keyword"> {Desired Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">It's Time to Take Control Over <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Start <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How to Avoid the Most Common and Costly <span class="cards__card-keyword"> {Product} </span> Mistakes</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Superlative} </span> <span class="cards__card-keyword"> {Product Category} </span> For <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How to Permanently Stop <span class="cards__card-keyword"> {Undesirable Outcome} </span>, Even if You've Tried Everything!</div></div>
+<div class="cards__card"><div class="cards__card-text">Why Are You <span class="cards__card-keyword"> {Undesirable Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">If You Think You Need <span class="cards__card-keyword"> {Desired Outcome} </span>, You Do.</div></div>
+<div class="cards__card"><div class="cards__card-text">Get/Start <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Sick of <span class="cards__card-keyword"> {Problem} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">Discover Best <span class="cards__card-keyword"> {Product} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Is <span class="cards__card-keyword"> {Topic} </span> a Scam? Find Out if You're Putting Your <span class="cards__card-keyword"> {Resource} </span> at Risk</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword"> {Solution} </span> Designed for <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Start <span class="cards__card-keyword"> {Desired Outcome} </span> Today</div></div>
+<div class="cards__card"><div class="cards__card-text">Goodbye <span class="cards__card-keyword"> {Problem} </span>. Hello <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Let Me Show You the Secrets of <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Honest, No "BS" Truth About <span class="cards__card-keyword"> {Product Category} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The <span class="cards__card-keyword"> {Superlative} </span> <span class="cards__card-keyword"> {Product} </span> You'll Ever Use</div></div>
+<div class="cards__card"><div class="cards__card-text">The <span class="cards__card-keyword"> {Superlative} </span> Ways to Utilize <span class="cards__card-keyword"> {Resource} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Only <span class="cards__card-keyword"> {Product Category} </span> Made Exclusively to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Objection} </span>. But It Works.</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Desired Outcome} </span> as <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Get <span class="cards__card-keyword"> {Desired Outcome} </span> Like <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Competitor} </span> <span class="cards__card-keyword"> {Undesirable Outcome} </span>. <span class="cards__card-keyword"> {Product Name} </span> <span class="cards__card-keyword"> {Desired Outcome} </span>.</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product Category} </span> That Works</div></div>
+<div class="cards__card"><div class="cards__card-text">We’re the Only Ones That <span class="cards__card-keyword"> {Unique Differentiator} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How I Found Out That <span class="cards__card-keyword"> {Solution} </span> Is the Best Medicine</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Problem} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">Stop <span class="cards__card-keyword"> {Problem} </span> Now!</div></div>
+<div class="cards__card"><div class="cards__card-text">You Are <span class="cards__card-keyword"> {Comparative} </span> Than You Think</div></div>
+<div class="cards__card"><div class="cards__card-text">A New Way to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Unleash the Power of <span class="cards__card-keyword"> {Product} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Why Haven't <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Been Told These Facts?</div></div>
+<div class="cards__card"><div class="cards__card-text">Break All the Rules and <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Get Rid of <span class="cards__card-keyword"> {Problem} </span> Once and for All</div></div>
+<div class="cards__card"><div class="cards__card-text">We Promise You This: <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">What <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Needs to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How an <span class="cards__card-keyword"> {Authority} </span> Showed Me <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">For <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Who Do <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Are You Struggling With <span class="cards__card-keyword"> {Undesirable Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">Why <span class="cards__card-keyword"> {Authority} </span> Is Wrong About <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product Name} </span> Is a <span class="cards__card-keyword"> {Product Category} </span> That <span class="cards__card-keyword"> {Desired Outcome} </span> Without <span class="cards__card-keyword"> {Objection} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Discover the <span class="cards__card-keyword"> {Solution} </span> Secrets of <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Idea That <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Can't <span class="cards__card-keyword"> {Desired Outcome} </span> Is Bullshit</div></div>
+<div class="cards__card"><div class="cards__card-text">Who Else Wants <span class="cards__card-keyword"> {Desired Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">Who Said It Had to Be Hard to <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Learn to <span class="cards__card-keyword"> {Desired Outcome} </span>.</div></div>
+<div class="cards__card"><div class="cards__card-text">Same <span class="cards__card-keyword"> {Resource} </span>. More <span class="cards__card-keyword"> {Desired Outcome} </span>.</div></div>
+<div class="cards__card"><div class="cards__card-text">Get More <span class="cards__card-keyword"> {Desired Outcome} </span> From <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Possibly the World's First <span class="cards__card-keyword"> {Product} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">What <span class="cards__card-keyword"> {Authority} </span> Taught Me About <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Our Biggest Challenge Was <span class="cards__card-keyword"> {Undesirable Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Solution} </span> for <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Now You Can <span class="cards__card-keyword"> {Desired Outcome} </span> Without <span class="cards__card-keyword"> {Objection} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The <span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword"> {Superlative} </span> Resources for <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">When <span class="cards__card-keyword"> {Authority} </span> Need <span class="cards__card-keyword"> {Solution} </span>, Here's What They Do</div></div>
+<div class="cards__card"><div class="cards__card-text">The <span class="cards__card-keyword"> {Superlative} </span> Way to Get <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Make Your First <span class="cards__card-keyword"> {$} </span> in Just <span class="cards__card-keyword"> {Period} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Authority} </span> Does X. Result: Priceless.</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product Name} </span>: The Best Way to <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Introducing: <span class="cards__card-keyword"> {Product} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Truth Behind <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> Little Known Factors That Could Affect Your <span class="cards__card-keyword"> {Resource} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Best <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Comprehensive Guide to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">What's It Costing You to <span class="cards__card-keyword"> {Undesirable Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">Master the Art of <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">What Is <span class="cards__card-keyword"> {Problem} </span> Worth to You?</div></div>
+<div class="cards__card"><div class="cards__card-text">A Best Method That's Helping <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">The Scientific Method To <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Behind the Scenes of a <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> Facts About <span class="cards__card-keyword"> {Topic} </span> That'll Make Your Hair Stand</div></div>
+<div class="cards__card"><div class="cards__card-text">The Secret of <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Regularly Pay Me <span class="cards__card-keyword"> {$} </span> for <span class="cards__card-keyword"> {Solution} </span>. But You Can Have It Free.</div></div>
+<div class="cards__card"><div class="cards__card-text">Are You Sure <span class="cards__card-keyword"> {Problem} </span> Is Not Costing You <span class="cards__card-keyword"> {Undesirable Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">How to Survive Your First <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Why You're Not <span class="cards__card-keyword"> {Desired Outcome} </span> (and What to Do About It)</div></div>
+<div class="cards__card"><div class="cards__card-text">We Help <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Do <span class="cards__card-keyword"> {Desired Outcome} </span> With <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Here’s the <span class="cards__card-keyword"> {Superlative} </span> Way to <span class="cards__card-keyword"> {Solution} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Detailed Strategies to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Unlock <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">We Promise You This: <span class="cards__card-keyword"> {Desired Outcome} </span> or <span class="cards__card-keyword"> {Promise} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Want to <span class="cards__card-keyword"> {Desired Outcome} </span> - but Don't Know How?</div></div>
+<div class="cards__card"><div class="cards__card-text">Is <span class="cards__card-keyword"> {Solution} </span> Good or Bad? Find Out Now.</div></div>
+<div class="cards__card"><div class="cards__card-text">The Secret Ways <span class="cards__card-keyword"> {Authority} </span> Get <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> Ways to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Because <span class="cards__card-keyword"> {Current Solution} </span> Just Doesn't Work Anymore</div></div>
+<div class="cards__card"><div class="cards__card-text">Do You Want <span class="cards__card-keyword"> {Desired Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Desired Outcome} </span> Made Simple</div></div>
+<div class="cards__card"><div class="cards__card-text">Short Cut <span class="cards__card-keyword"> {Solution} </span> You Can Use Immediately</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Problem} </span> Can Make You Lose Customers</div></div>
+<div class="cards__card"><div class="cards__card-text">How to Make a Small Fortune With <span class="cards__card-keyword"> {Product} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Overcome the <span class="cards__card-keyword"> {Problem} </span> That Keeps You <span class="cards__card-keyword"> {Undesirable Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Best <span class="cards__card-keyword"> {Product} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Now You Can Do <span class="cards__card-keyword"> {Desired Outcome} </span> in <span class="cards__card-keyword"> {Period} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How to Make <span class="cards__card-keyword"> {$} </span> With Your <span class="cards__card-keyword"> {Product} </span>, Step-by-step</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product Name} </span> Is a <span class="cards__card-keyword"> {Product Category} </span> That <span class="cards__card-keyword"> {Unique Differentiator} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Here Is a Method That’s Helping <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Undesirable Outcome} </span>? Stop!</div></div>
+<div class="cards__card"><div class="cards__card-text">The Easiest Way to <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product} </span> You'll Actually Use</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Desired Outcome} </span> As Easily As a <span class="cards__card-keyword"> {Authority} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Can Your <span class="cards__card-keyword"> {Current Solution} </span> Pass the Test?</div></div>
+<div class="cards__card"><div class="cards__card-text">We <span class="cards__card-keyword"> {Do This} </span>, but the Difference Is <span class="cards__card-keyword"> {Unique Differentiator} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">I Stopped <span class="cards__card-keyword"> {Doing Common Thing} </span> Forever. You Should Too. Here's Why.</div></div>
+<div class="cards__card"><div class="cards__card-text">We Analysed <span class="cards__card-keyword"> {Number} </span> <span class="cards__card-keyword"> {Topics} </span> - and Here's What We Found</div></div>
+<div class="cards__card"><div class="cards__card-text">You're Tired of <span class="cards__card-keyword"> {Objection Or Anxiety} </span>. But You Want <span class="cards__card-keyword"> {Desired Outcome} </span>. So It's Time You Meet <span class="cards__card-keyword"> {Product Name} </span>.</div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Product Category} </span> With <span class="cards__card-keyword"> {Unique Differentiator} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">Why Am I So Damn <span class="cards__card-keyword"> {Problem} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">7 Reason Why You Are <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">21 Ways To Stop <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">How I Cured My <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Solution} </span> Will Make You <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">This is Why You Are <span class="cards__card-keyword"> {Problem} </span></div></div>
+<div class="cards__card"><div class="cards__card-text">And This Is Why <span class="cards__card-keyword"> {Desired Outcome} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Number} </span> Things Only <span class="cards__card-keyword" id="keyword_audience"> {Audience} </span> Understands</div></div>
+<div class="cards__card"><div class="cards__card-text">The Future Of <span class="cards__card-keyword"> {Product Category} </span></div></div>
+<div class="cards__card"><div class="cards__card-text"><span class="cards__card-keyword"> {Solution} </span> Of The Year</div></div>
+<div class="cards__card"><div class="cards__card-text">How To Get <span class="cards__card-keyword"> {Desired Outcome} </span>?</div></div>
+<div class="cards__card"><div class="cards__card-text">Your <span class="cards__card-keyword"> {Desired Outcome} </span> Now in PDF/Email/Newsletter</div></div>
+<!-- End Insert -->
+
+
+
+
+
+
+
+
+          </div>
+        </section>
+    </div>
+
+
+      </div>
+    </main>
+  </body>
+</html>
